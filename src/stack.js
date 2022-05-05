@@ -6,6 +6,11 @@ var _ = require('underscore');
 
 let stack = [];
 
+/* 
+Moduler i JavaScript är enkla .js-filer som exponerar funktioner i en variabel som heter exports. 
+Det vi gör här är helt enkelt att skapa en funktion push som vi exporterar. På samma sätt exporterar vi pull och pop.
+*/
+
 // Lägger ett element överst i stacken
 exports.push = function (x) {
     stack.push(x);
