@@ -1,0 +1,27 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "labb-utvecklingsmetodik",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burreh/testing-with-jest.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "test"
+  ],
+  "author": "Boorhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Burreh/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/Burreh/testing-with-jest#readme"
+}
