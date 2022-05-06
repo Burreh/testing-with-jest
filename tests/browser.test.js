@@ -35,10 +35,10 @@ describe('Clicking "Pusha till stacken"', () => {
 
 (async function test1() {
     try {
-        let pop = await driver.findElement(By.name('pop'));
+        let pop = await driver.findElement(By.id('pop'));
         await pop.click();
         let prompt = await driver.switchTo().alert();
-        await prompt sendKeys('Är du säker?');
+        await prompt.sendKeys('Är du säker?');
         await prompt.accept();
 
     } catch (error) {
