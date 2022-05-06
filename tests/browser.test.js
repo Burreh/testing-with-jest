@@ -32,3 +32,16 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+(async function test1() {
+    try {
+        let pop = await driver.findElement(By.name('pop'));
+        await pop.click();
+        let prompt = await driver.switchTo().alert();
+        await prompt sendKeys('Är du säker?');
+        await prompt.accept();
+
+    } catch (error) {
+        console.log(error);
+    }
+});
