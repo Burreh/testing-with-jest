@@ -18,6 +18,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
-test('pop first item in the stack and returns the element', () => {
+test('pop first item in the stack and returns number 42', () => {
     expect(stack.pop()).toBe(42);
+});
+
+test('peek and pop top item in the stack and returns that element', () => {
+    stack.push(5);
+    expect(stack.peek()).toBe(5);
+    expect(stack.pop()).toBe(5);
 });
